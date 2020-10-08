@@ -1,0 +1,29 @@
+const express = require("express")
+const router = express.Router()
+
+const { getPosts, getPost, makePost } = require("../controllers/posts_controller")
+
+// READ
+// GET on '/posts'
+// Returns all posts
+router.get("/", getPosts)
+
+// READ
+// GET on '/posts/:id'
+// Returns post with given id
+router.get("/:id", getPost)
+
+// CREATE
+// POST on '/posts'
+// Creates a new post
+router.post("/", makePost)
+
+// DELETE
+// DELETE on '/posts/:id'
+// Deletes a post with id
+
+// UPDATE
+// PUT on 'posts/:id'
+// Updates a post with id
+
+module.exports = router

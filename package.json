@@ -1,0 +1,23 @@
+{
+  "name": "express_bare_bones",
+  "version": "1.0.0",
+  "description": "- ExpressJS Framework",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon server/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.8"
+  },
+  "devDependencies": {
+    "forever": "^3.0.2",
+    "jest": "^26.5.0",
+    "nodemon": "^2.0.4"
+  }
+}
