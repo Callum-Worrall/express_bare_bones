@@ -1,10 +1,1 @@
-{
-  "1": {
-    "title": "My first blog post",
-		"create_date": "08/10/2019",
-		"modified_date": "08/10/2019",
-    "username": "callum",
-    "content": "This is my first blog post!",
-    "category": ""
-  }
-}
+{"1":{"title":"Updated post","username":"tester","create_date":1602480040897,"modified_date":1602480040903,"content":"This is an updated blog post!","category":""}}

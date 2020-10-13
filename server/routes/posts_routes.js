@@ -1,12 +1,16 @@
 const express = require("express")
 const router = express.Router()
 
-const { getPosts, getPost, makePost } = require("../controllers/posts_controller")
+const {
+    getPosts, getPost, makePost, removePost, changePost,
+    getMongoPosts
+} = require("../controllers/posts_controller")
 
 // READ
 // GET on '/posts'
 // Returns all posts
 router.get("/", getPosts)
+router.get("/mongo/", getMongoPosts)
 
 // READ
 // GET on '/posts/:id'
@@ -21,9 +25,12 @@ router.post("/", makePost)
 // DELETE
 // DELETE on '/posts/:id'
 // Deletes a post with id
+router.delete("/:id", removePost)
 
 // UPDATE
 // PUT on 'posts/:id'
 // Updates a post with id
+router.put("/:id", changePost)
+
 
 module.exports = router

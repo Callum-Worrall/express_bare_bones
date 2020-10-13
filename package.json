@@ -1,11 +1,14 @@
 {
   "name": "express_bare_bones",
   "version": "1.0.0",
-  "description": "- ExpressJS Framework",
+  "description": "- ExpressJS Framework & MongoDB",
   "main": "server/app.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon server/app.js"
+    "start": "nodemon server/app.js",
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install",
+    "rebuild": "npm run clean && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "mongoose": "^5.10.8"
   },
   "devDependencies": {
